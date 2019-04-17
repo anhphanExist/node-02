@@ -1,6 +1,5 @@
 
 function get(response) {
-    console.log("'GET' was called.");
 
     response.writeHead(200, {"Content-Type": "text/html"});
     response.write("world");
@@ -8,7 +7,6 @@ function get(response) {
 }
 
 function post(response) {
-    console.log("'POST' was called.");
 
     response.writeHead(200, {"Content-Type": "text/html"});
     response.write("world created");
@@ -16,7 +14,6 @@ function post(response) {
 }
 
 function put(response) {
-    console.log("'PUT' was called.");
 
     response.writeHead(200, {"Content-Type": "text/html"});
     response.write("world updated");
@@ -24,7 +21,6 @@ function put(response) {
 }
 
 function del(response) {
-    console.log("'DELETE' was called.");
 
     response.writeHead(200, {"Content-Type": "text/html"});
     response.write("world deleted");

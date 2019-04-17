@@ -8,13 +8,11 @@ function start(route, handle) {
     function onRequest(request, response) {
         var pathname = url.parse(request.url).pathname;
         var method = request.method;
-        console.log("Request for " + method + " method received");
 
         request.setEncoding("utf8");
         request.addListener("data", function(postDataChunk) {
 
         });
-
         request.addListener("end", function() {
             route(handle, pathname, method, response);
         });
