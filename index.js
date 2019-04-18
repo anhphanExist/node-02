@@ -7,6 +7,6 @@ var handle = {
     POST: requestHandlers.post,
     PUT: requestHandlers.put,
     DELETE: requestHandlers.del
-}
+};
 
 server.start(router.route, handle);
