@@ -8,14 +8,8 @@ function start(route, handle) {
     function onRequest(request, response) {
         var pathname = url.parse(request.url).pathname;
         var method = request.method;
-
-        request.setEncoding("utf8");
-        request.addListener("data", function(postDataChunk) {
-
-        });
-        request.addListener("end", function() {
-            route(handle, pathname, method, response);
-        });
+        
+        route(handle, pathname, method, response);
     }
 
     var server = http.createServer(onRequest);
