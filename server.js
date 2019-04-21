@@ -1,8 +1,8 @@
 // server.js
 var http = require("http");
 var url = require("url");
-const port = process.env.PORT || 3000;
-const host = process.env.HOST || "0.0.0.0";
+const port = process.env.PORT;
+const host = process.env.HOST;
 
 function start(route, handle) {
     function onRequest(request, response) {
